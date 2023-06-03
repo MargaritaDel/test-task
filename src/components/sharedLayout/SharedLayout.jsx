@@ -8,8 +8,7 @@ export default function SharedLayout()  {
       <Header>
         <Nav>
           <NavLink to="/"><FaHome />Home</NavLink>
-          <NavLink to="/tweets">
-          <FaTwitter />Tweets</NavLink>
+          <NavLink to="/tweets"><FaTwitter />Tweets</NavLink>
         </Nav>
       </Header>
       <Main>
