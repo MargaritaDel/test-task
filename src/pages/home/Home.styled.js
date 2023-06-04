@@ -1,8 +1,9 @@
 import styled from '@emotion/styled';
+import bcg from "../../images/main.png";
 
 export const HomeTitle = styled.h1`
 text-align: center;
-margin-bottom: 50px;
+margin-bottom: 10px;
 font-style: bold;
 font-weight: 500;
 font-size: 50px;
@@ -60,4 +61,15 @@ border: '1px solid #ccc',
   padding: '20px',
   width: '400px',
   height: '400px',
+`;
+
+export const WrapperBg = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  background: url(${bcg});
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 60px;
 `;
