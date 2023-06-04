@@ -41,7 +41,6 @@ padding: 14px 28px;
     background: #5CD3A8;
     box-shadow: 0 0 10px #1DA1F2;
 }
-
 `;
 
 export const LinkButtonWrapper = styled.div`
