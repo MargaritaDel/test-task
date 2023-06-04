@@ -11,7 +11,7 @@ import { useLocation, useSearchParams } from "react-router-dom";
 
 const UsersList = () => {
   const location = useLocation();
-  const backLinkLocation = useRef(location.state?.from ?? `/`);
+  // const backLinkLocation = useRef(location.state?.from ?? `/`);
   const [searchParams, setSearchParams] = useSearchParams();
   const currentPage = searchParams.get("currentPage") ?? "";
   const updatedUsers = useSelector(selectupdatedUsers);
