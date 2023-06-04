@@ -8,18 +8,19 @@ const SharedLayout = lazy(() => import('./components/sharedLayout/SharedLayout')
 
 function App() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <Routes>
-        <Route path="/" element={<SharedLayout />}>
-          <Route index element={<Home />} />
-          <Route path="tweets" element={<Tweets />} />
-          <Route path="*" element={<Navigate to="/" />} />
-        </Route>
-      </Routes>
+    <Router>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/" element={<SharedLayout />}>
+            <Route index element={<Home />} />
+            <Route path="tweets" element={<Tweets />} />
+            <Route path="*" element={<Navigate to="/" />} />
+          </Route>
+        </Routes>
       </Suspense>
+    </Router>
   );
 }
-
 export default App;
 
 
